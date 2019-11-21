@@ -18,9 +18,17 @@
     </div>
   </div>
   <div id="app" class="content">
+    <section class="image-gallery">
+      <div class="image" v-for="item in items">
+        <h2>{{item.title}}</h2>
+        <p>{{item.desc}}</p>
+        <img :src="item.path" />
+      </div>
   </div>
   <div class="footer">
     <a href="admin.html">Admin</a>
+    <br>
+    Github: <a href="https://github.com/BYUCS260/lab-5-mongodb-tjfarns">tjfarns</a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
